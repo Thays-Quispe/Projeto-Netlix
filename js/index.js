@@ -8,7 +8,7 @@ document.querySelectorAll('.profile').forEach(profile => {
         console.log("SALVANDO:", name, img); 
 
         localStorage.setItem('userName', name);
-        localStorage.setItem('userImg', img);
+        localStorage.setItem('userImg', `/Projeto-Netlix/${img}`);
 
         
         window.location.href = profile.href;
