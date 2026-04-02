@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Botão tema -->
+    <button id="toggleTheme" class="theme-toggle">🌙</button>
+
+    <main>
+        <header>
+            <h1>Quem está assistindo?</h1>
+        </header>
+
+        <section aria-label="Perfis disponíveis">
+            <nav aria-label="Seleção de perfis">
+                <ul class="profiles">
+
+                    <li>
+                        <a href="/netflix-plataform-main/netflix-plataform-main/catalogo/catalogo.html" 
+                            class="profile"
+                            data-name="Lucas"
+                            data-img="/assets/perfil 1.jpg">
+                            <figure>
+                                <img src="/assets/perfil 1.jpg" alt="Selecionar Perfil 1">
+                                <span class="edit-icon">✏️</span>
+                                <figcaption>Lucas</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                        <li>    
+                            <a href="/netflix-plataform-main/netflix-plataform-main/catalogo/catalogo.html" 
+                            class="profile"
+                            data-name="Thays"
+                            data-img="/assets/perfil 2.jpg">
+
+                                <figure>
+                                    <img src="/assets/perfil 2.jpg" alt="Selecionar Perfil 2">
+                                    <span class="edit-icon">✏️</span>
+                                    <figcaption>Thays</figcaption>
+                                </figure>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Gerenciar perfis -->
+            <div class="manage-container">
+                <button id="manageProfiles">Gerenciar perfis</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
