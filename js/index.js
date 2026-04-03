@@ -11,6 +11,6 @@ document.querySelectorAll('.profile').forEach(profile => {
         localStorage.setItem('userImg', `/Projeto-Netlix/${img}`);
 
         
-        window.location.href = "./catalogo/catalogo.html";
+        window.location.href = "./netflix-plataform-main/netflix-plataform-main/catalogo/catalogo.html";
     });
 });
