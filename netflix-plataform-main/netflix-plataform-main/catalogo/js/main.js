@@ -69,3 +69,7 @@ window.addEventListener("DOMContentLoaded", () => {
         document.getElementById('userImg').src = img;
     }
 });
+
+document.getElementById("userName").onclick = function () {
+    window.location.href = "/Projeto-Netlix/index.html";
+};
