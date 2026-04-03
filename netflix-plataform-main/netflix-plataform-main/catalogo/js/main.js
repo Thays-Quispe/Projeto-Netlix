@@ -2,8 +2,8 @@ import { categories } from './data.js';
 import { createCarousel } from './components/Carousel.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const nomePerfil = localStorage.getItem('perfilAtivoNome');
-    const imagemPerfil = localStorage.getItem('perfilAtivoImagem');
+        const nomePerfil = localStorage.getItem('userName');
+        const imagemPerfil = localStorage.getItem('userImg');
 
     if (nomePerfil && imagemPerfil) {
         const kidsLink = document.querySelector('.kids-link');
@@ -57,18 +57,6 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     });
 });
 
-window.addEventListener("DOMContentLoaded", () => {
-    const name = localStorage.getItem('userName');
-    const img = localStorage.getItem('userImg');
-
-    if (name) {
-        document.getElementById('userName').innerText = name;
-    }
-
-    if (img) {
-        document.getElementById('userImg').src = img;
-    }
-});
 
 document.getElementById("userName").onclick = function () {
     window.location.href = "/Projeto-Netlix/index.html";
